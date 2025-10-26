@@ -18,6 +18,9 @@ function sendUsers(req, res) {
 }
 
 app.get('/api/users', sendUsers);
+app.get('/', (req, res) => {
+   res.send('Welcome user to our REST API Application');
+});
 
 // function addUser(req, res) {
 //    // 1. userName, 2. emailAddress
